@@ -43,8 +43,6 @@ for t in train_files:
             stop.append(data)
         if keys == 'RightBackward1':
             data = loader[keys]
-        if keys == 'RightBackward1':
-            data = loader[keys]
             right.append(data)
         if keys == 'RightBackward2':
             data = loader[keys]

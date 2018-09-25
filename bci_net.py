@@ -5,8 +5,11 @@ import torch.optim as optim
 import matplotlib.pyplot as plt
 
 
-device = torch.device('cuda:0')
-print(torch.cuda.is_available(), device)
+if torch.cuda.is_available():
+    device = torch.device('cuda:0')
+else:
+    device = torch.device('cpu')
+print('using device:', device)
 
 class BCINet(nn.Module):
     def __init__(self, feature_dim, hidden_layer_dim, target_dim):

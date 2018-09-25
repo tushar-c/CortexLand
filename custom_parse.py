@@ -83,4 +83,3 @@ torch.save(left_tensor, 'left_tensor')
 torch.save(right_tensor, 'right_tensor')
 torch.save(stop_tensor, 'stop_tensor')
 
-
